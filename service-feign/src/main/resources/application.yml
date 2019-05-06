@@ -9,3 +9,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+#Feign自带断路器，Dalston版本之后默认未开启
+feign:
+  hystrix:
+    enabled: true
