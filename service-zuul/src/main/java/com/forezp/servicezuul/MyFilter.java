@@ -39,7 +39,7 @@ public class MyFilter extends ZuulFilter {
     @Override
     public boolean shouldFilter() {
         //需要过滤时改为true
-        return false;
+        return true;
     }
 
     @Override
