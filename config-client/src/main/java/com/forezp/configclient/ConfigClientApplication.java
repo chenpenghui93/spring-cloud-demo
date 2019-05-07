@@ -27,9 +27,12 @@ public class ConfigClientApplication {
     @Value("${foo}")
     String foo;
 
+    @Value("${democonfigclient.message}")
+    String message;
+
     @RequestMapping(value = "/hi")
     public String hi(){
-        return foo;
+        return foo + " " + message;
     }
 
 }
