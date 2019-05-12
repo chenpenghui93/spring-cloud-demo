@@ -1,4 +1,4 @@
-# 高可用服务注册中心
+# 高可用服务注册中心 https://blog.csdn.net/forezp/article/details/81041101
 # 1、配置不同的服务端口+主机名+注册地址
 # 2、各eureka客户端互相注册达到注册信息共享？
 
