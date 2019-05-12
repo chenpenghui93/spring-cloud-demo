@@ -1,0 +1,15 @@
+# 高可用服务注册中心
+# 1、配置不同的服务端口+主机名+注册地址
+# 2、各eureka客户端互相注册达到注册信息共享？
+
+server:
+  port: 8761
+
+spring:
+  profiles: peer1
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    serviceUrl:
+      defaultZone: http://peer2:8769/eureka/
